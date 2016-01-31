@@ -1,0 +1,6 @@
+.handle(ng-if="region != 'center' && regionObj.handleSize", ng-class="{locked: locked,handleLarge:regionObj.handleSize >= 5,open:regionObj.size}", ng-dblclick="regionObj.toggle()")
+	.handleIcon(ng-click="regionObj.toggle()", ng-show="!locked && regionObj.handleSize >= 5")
+		img(src="src/arrow-down.svg")
+	//.handleTitle(ng-if="handleTitle", ng-show="!regionObj.size")
+		//span {{handleTitle | translate}}
+.content(ng-transclude="")
